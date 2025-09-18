@@ -3,7 +3,7 @@ create database Casa_de_Repouso
 use Casa_de_Repouso
 
 create table idosos(
-Cod_idoso primary key,
+Cod_idoso primary key auto_increment,
 CPF varchar(14) not null,
 Nome varchar(100) not null,
 Cidade varchar(50) not null,
@@ -19,7 +19,7 @@ Endereço varchar(150) not null
 )
 
 create table medicos(
-Cod int primary key,
+Cod int primary key auto_increment,
 Nome varchar(100) not null,
 Especializacao varchar(50) not null,
 Email varchar(60) not null,
@@ -28,7 +28,7 @@ Cidade varchar(50) not null
 )
 
 create table enfermeiros(
-Cod int primary key,
+Cod int primary key auto_increment,
 Nome varchar(100) not null,
 Email varchar(60) not null,
 Telefone varchar(11) not null,
