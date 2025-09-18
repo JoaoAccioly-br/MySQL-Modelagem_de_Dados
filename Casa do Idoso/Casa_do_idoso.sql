@@ -4,7 +4,7 @@ use Casa_de_Repouso
 
 create table idosos(
 Cod_idoso primary key,
-CPF varchar(14) unique not null,
+CPF varchar(14) not null,
 Nome varchar(100) not null,
 Cidade varchar(50) not null,
 Dt_nascimento date not null
@@ -44,7 +44,7 @@ create table consulta_medico(
 Cod_medico int not null,
 Cod_idoso int not null,
 Dt_consulta date not null,
-Num_consulta int not null, // permite retornos do médico ao mesmo dia
+Num_consulta int not null,
 Observacoes varchar(255),
 
 )
