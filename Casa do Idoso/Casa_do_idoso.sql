@@ -36,11 +36,13 @@ Cidade varchar(50) not null
 )
 
 create table responsavel_idoso(
+Id_relacao int primary key auto_increment,
 Cpf_responsavel varchar(14) not null,
 Cod_idoso int not null
 )
 
 create table consulta_medico(
+Id_consulta int primary key auto_increment,
 Cod_medico int not null,
 Cod_idoso int not null,
 Dt_consulta date not null,
@@ -49,6 +51,7 @@ Observacoes varchar(255),
 
 )
 create table atendimento_enfermeiro(
+Id_atendimento int primary key auto_increment,
 Cod_enfermeiro int not null,
 Cod_idoso int not null,
 Dt_atendimento date not null,
