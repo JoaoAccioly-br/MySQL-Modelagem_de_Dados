@@ -1,0 +1,14 @@
+-- Cria o banco de dados
+CREATE DATABASE VIRTUAL;
+
+-- Seleciona o banco de dados
+USE VIRTUAL;
+
+-- Cria a tabela CADFUN
+CREATE TABLE CADFUN (
+    CODFUN INT AUTO_INCREMENT PRIMARY KEY,
+    NOME VARCHAR(50) NOT NULL,
+    DEPTO TINYINT,
+    FUNCAO VARCHAR(35),
+    SALARIO DECIMAL(8,2)
+);

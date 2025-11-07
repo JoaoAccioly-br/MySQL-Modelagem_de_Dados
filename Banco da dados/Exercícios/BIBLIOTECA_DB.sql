@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS BIBLIOTECA_DB;
+USE BIBLIOTECA_DB;
+
+CREATE TABLE livros (
+    id_livro INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(150),
+    autores VARCHAR(150),
+    nome_leitor VARCHAR(100),
+    data_emprestimo DATE
+);
