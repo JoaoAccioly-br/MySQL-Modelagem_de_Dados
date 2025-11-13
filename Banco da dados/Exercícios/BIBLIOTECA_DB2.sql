@@ -14,7 +14,9 @@ USE BIBLIOTECA_DB;
 CREATE TABLE editoras(
     id_editora int auto_increment primary key,
     nome varchar(100) not null,
-    endereco varchar(150) not null    
+    rua varchar(100) not null,
+    cidade varchar(50),
+    pais varchar(50)
 )
 
 CREATE TABLE autores(
